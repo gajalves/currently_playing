@@ -143,7 +143,7 @@ internal class GithubService
             committer = new Committer
             {
                 name = "bot",
-                email = "ga.jaimealves@gmail.com"
+                email = $"{gitHub.user}@mail.com"
             },
             content = EncodeContent(description, urlImage),
             sha = shaFile
@@ -153,7 +153,7 @@ internal class GithubService
     private string EncodeContent(string description, string urlImage)
     {
         string content = $"## Hi there 👋 \n" +
-                         $"[![Gabriel's github stats](https://github-readme-stats.vercel.app/api?username={gitHub.user}&show_icons=true&theme=dark)](https://github.com/anuraghazra/github-readme-stats)\n" +
+                         $"[![{gitHub.user}'s github stats](https://github-readme-stats.vercel.app/api?username={gitHub.user}&show_icons=true&theme=dark)](https://github.com/anuraghazra/github-readme-stats)\n" +
                          $"[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username={gitHub.user}&layout=compact&theme=dark)](https://github.com/anuraghazra/github-readme-stats)\n" +
                          $"## Currently Playing 🎵 \n" +
                          $"<p align=\"center\">" +
