@@ -31,7 +31,7 @@ A C# console application that automatically updates your GitHub profile with the
 
 ## GitHub Setup
 
-1. Go to [GitHub Settings > Developer settings](https://github.com/settings/developer)
+1. Go to [GitHub Settings > Developer settings](https://github.com/settings/tokens)
 2. Navigate to "Personal access tokens" > "Tokens (classic)"
 3. Generate new token with:
    - `repo` permission (full repository access)
