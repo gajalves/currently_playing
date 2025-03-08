@@ -1,5 +1,7 @@
 ## currently_playing
 
+![console](https://github.com/gajalves/currently_playing/blob/main/assets/console.png?raw=true)
+
 A C# console application that automatically updates your GitHub profile with the song you're currently listening to on Spotify.
 
 ## Features
