@@ -133,6 +133,9 @@ class Program
                     var result = await spotifyService.InitiateAuthorizationFlow();
                     if (result == Global.RequestCanceled)
                         return currentContext;
+
+                    config.Spotify.AccessToken = spotifyService.GetAccessToken();
+                    config.Spotify.RefreshToken = spotifyService.GetRefreshToken();
                     ConfigManager.SaveConfig(config);
                     Console.WriteLine("Spotify authorization completed and configuration saved.");
                 }

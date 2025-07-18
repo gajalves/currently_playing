@@ -94,6 +94,11 @@ internal class SpotifyService
         return spotify.access_token;
     }
 
+    public string GetRefreshToken()
+    {
+        return spotify.refresh_token;
+    }
+
     public string GetNewDescription()
     {
         return spotify.newDescription;
